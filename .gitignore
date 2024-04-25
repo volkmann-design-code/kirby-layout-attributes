@@ -9,8 +9,7 @@
 
 # Composer files
 /vendor
+/kirby
 
 # kirbyup temp development entry
 /index.dev.mjs
-
-/index.js

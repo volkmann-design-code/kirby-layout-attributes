@@ -22,5 +22,8 @@
         "psr-4": {
             "VolkmannDesignCode\\KirbyLayoutAttributes\\": "src/"
         }
-    }
+    },
+	"require-dev": {
+		"getkirby/cms": "^4.0"
+	}
 }
