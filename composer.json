@@ -1,0 +1,26 @@
+{
+	"name": "volkmann-design-code/kirby-layout-attributes",
+	"description": "A Kirby Plugin to use layout attributes in the panel",
+	"license": "MIT",
+	"type": "kirby-plugin",
+	"authors": [
+		{
+			"name": "Enzo Volkmann",
+			"email": "enzo@volkmann.dev"
+		}
+	],
+	"require": {
+		"getkirby/composer-installer": "^1.1"
+	},
+	"config": {
+        "optimize-autoloader": true,
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	},
+    "autoload": {
+        "psr-4": {
+            "VolkmannDesignCode\\KirbyLayoutAttributes\\": "src/"
+        }
+    }
+}
