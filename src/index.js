@@ -18,6 +18,9 @@ window[pluginNamespace].functions.isLayoutField = (field) => {
 };
 window[pluginNamespace].functions.addLayoutAttrs = (layoutField) => {
   const columnId = layoutField.columns[0].id;
+  /**
+   * @type {HTMLElement} layoutEl
+   */
   let layoutEl = document.querySelector(
     `.k-layout:has(.k-layout-column[id="${columnId}"])`,
   );
@@ -30,6 +33,7 @@ window[pluginNamespace].functions.addLayoutAttrs = (layoutField) => {
   for (const key of attrKeys) {
     const val = layoutField.attrs[key];
     layoutEl.setAttribute(`data-attr-${key}`, val);
+    layoutEl.style.setProperty(`--attr-${key}`, val);
   }
 };
 
