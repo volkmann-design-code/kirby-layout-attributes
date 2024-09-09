@@ -8,6 +8,8 @@ window[pluginNamespace].functions.isLayoutField = (field) => {
     field.length > 0 &&
     field.every(
       (entry) =>
+        typeof entry === "object" &&
+        entry !== null &&
         "attrs" in entry &&
         "columns" in entry &&
         "id" in entry &&
